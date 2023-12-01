@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Geometricka_telesa
 {
-    public abstract class Tvar
+    public interface ITvar
     {
-        public abstract void NacteniDatOdUzivatele();
+        void NacteniDatOdUzivatele();
 
-        public abstract double Obsah();
-        public abstract double Obvod();
+        double Obsah();
+
+        double Obvod();
+
+        void VypisNaKonzoli();
     }
 }

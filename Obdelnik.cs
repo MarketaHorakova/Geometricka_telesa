@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Geometricka_telesa
 {
-    public class Obdelnik :Tvar
+    public class Obdelnik :ITvar
     {
         public double StranaA;
         public double StranaB;
 
-        public override void NacteniDatOdUzivatele ()
+        public void NacteniDatOdUzivatele ()
         {
             Console.WriteLine("Napis delku strany A v mm : ");
             double.TryParse(Console.ReadLine(), out double StranaA);
@@ -19,12 +19,12 @@ namespace Geometricka_telesa
             double.TryParse(Console.ReadLine(), out double StranaB);
         }
 
-        public override double Obsah()
+        public double Obsah()
         {
             return StranaA*StranaB;
         }
 
-        public override double Obvod()
+        public double Obvod()
         {
             return 2*(StranaA + StranaB);
         }

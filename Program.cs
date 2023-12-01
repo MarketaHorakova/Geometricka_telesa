@@ -7,7 +7,7 @@ bool isOver = false;
 
 while (!isOver) 
 {
-    Console.WriteLine("Vyber si geometrické těleso:\n0 - Konec\n1 - Krychle\n2 - Kvadr\n3 - Koule\n4 - Valec\n5 - Obdelnik");
+    Console.WriteLine("Vyber si geometrické těleso:\n0 - Konec\n1 - Krychle\n2 - Kvadr\n3 - Koule\n4 - Valec\n5 - Obdelnik\n6 - Kruh");
     int.TryParse(Console.ReadLine(), out int inputNumberChoice);
 
     switch (inputNumberChoice)
@@ -45,6 +45,12 @@ while (!isOver)
             obdelnik.NacteniDatOdUzivatele();
             Console.WriteLine($"Obsah: {obdelnik.Obsah()} mm2");
             Console.WriteLine($"Obvod: {obdelnik.Obvod()} mm");
+            break;
+        case 6:
+            Kruh kruh = new Kruh();
+            kruh.NacteniDatOdUzivatele();
+            Console.WriteLine($"Obsah: {kruh.Obsah()} mm2");
+            Console.WriteLine($"Obvod: {kruh.Obvod()} mm");
             break;
     }
 
