@@ -49,8 +49,7 @@ while (!isOver)
         case 6:
             Kruh kruh = new Kruh();
             kruh.NacteniDatOdUzivatele();
-            Console.WriteLine($"Obsah: {kruh.Obsah()} mm2");
-            Console.WriteLine($"Obvod: {kruh.Obvod()} mm");
+            kruh.VypisNaKonzoli();
             break;
     }
 
