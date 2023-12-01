@@ -14,6 +14,6 @@ namespace Geometricka_telesa
 
         double Obvod();
 
-        void VypisNaKonzoli();
+      //  void VypisNaKonzoli();
     }
 }

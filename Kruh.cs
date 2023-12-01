@@ -28,10 +28,10 @@ namespace Geometricka_telesa
             return 2 * Pi * Radius;
         }
 
-        public void VypisNaKonzoli()
-        {
-            Console.WriteLine($"Obsah: {Obsah} mm2");
-            Console.WriteLine($"Obvod: {Obvod} mm");
-        }
+        //public void VypisNaKonzoli()
+        //{
+        //    Console.WriteLine($"Obsah: {Obsah()} mm2");
+        //    Console.WriteLine($"Obvod: {Obvod()} mm");
+        //}
     }
 }
